@@ -12,7 +12,7 @@ RUN rm -f /etc/localtime \
     && ln -s /usr/share/zoneinfo/Asia/Phnom_Penh /etc/localtime
 
 RUN pip install --upgrade pip \ 
-    && pip3 install ansible==2.5.0rc3 \
+    && pip3 install ansible==2.5.0 \
     && pip3 install cryptography netmiko napalm pyntc \
     && pip3 install --upgrade paramiko \
     && pip3 install yamllint
